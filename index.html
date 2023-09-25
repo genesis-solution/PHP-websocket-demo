@@ -9,7 +9,7 @@
 <button onclick="transmitMessage()">Send</button>
 <script>
     // Create a new WebSocket.
-    var socket  = new WebSocket('ws://localhost:8083');
+    var socket  = new WebSocket('ws://213.165.77.188:8082?source=cshape');
 
     // Define the
     var message = document.getElementById('message');
@@ -19,7 +19,7 @@
     }
 
     socket.onmessage = function(e) {
-        alert( e.data );
+        console.log( e.data );
     }
 </script>
 </body>
